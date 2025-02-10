@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon/favicon.png"
+      type="image/x-icon"
+    />
+
+    <meta name="googlebot" content="noindex" />
+    <meta name="robots" content="noindex,nofollow" />
+
+    <title>
+      Reseller Package Selection - Get Peace of Mind for your Pets with Paws to
+      Tail
+    </title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="vendor/slick.v1.8.1/slick/slick.min.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/slick.v1.8.1/slick/slick-theme.min.css"
+    />
+    <style>
+      .desktop-nav {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.178);
+      }
+    </style>
+
+    <link rel="stylesheet" href="assets/css/style.css?ver=2" />
+  </head>
+
+  <body>
+    <script>
+      const statesData = {
+        states: [
+          {
+            state_id: 1,
+            name: "Alabama",
+            abbreviation: "AL",
+          },
+          {
+            state_id: 2,
+            name: "Alaska",
+            abbreviation: "AK",
+          },
+          {
+            state_id: 53,
+            name: "American Samoa",
+            abbreviation: "AS",
+          },
+          {
+            state_id: 3,
+            name: "Arizona",
+            abbreviation: "AZ",
+          },
+          {
+            state_id: 4,
+            name: "Arkansas",
+            abbreviation: "AR",
+          },
+          {
+            state_id: 61,
+            name: "Armed Forces Americas",
+            abbreviation: "AA",
+          },
+          {
+            state_id: 60,
+            name: "Armed Forces Non-Americas",
+            abbreviation: "AE",
+          },
+          {
+            state_id: 62,
+            name: "Armed Forces Pacific",
+            abbreviation: "AP",
+          },
+          {
+            state_id: 5,
+            name: "California",
+            abbreviation: "CA",
+          },
+          {
+            state_id: 6,
+            name: "Colorado",
+            abbreviation: "CO",
+          },
+          {
+            state_id: 7,
+            name: "Connecticut",
+            abbreviation: "CT",
+          },
+          {
+            state_id: 8,
+            name: "Delaware",
+            abbreviation: "DE",
+          },
+          {
+            state_id: 9,
+            name: "District of Columbia",
+            abbreviation: "DC",
+          },
+          {
+            state_id: 54,
+            name: "Federated States of Micronesia",
+            abbreviation: "FM",
+          },
+          {
+            state_id: 10,
+            name: "Florida",
+            abbreviation: "FL",
+          },
+          {
+            state_id: 11,
+            name: "Georgia",
+            abbreviation: "GA",
+          },
+          {
+            state_id: 55,
+            name: "Guam",
+            abbreviation: "GU",
+          },
+          {
+            state_id: 12,
+            name: "Hawaii",
+            abbreviation: "HI",
+          },
+          {
+            state_id: 13,
+            name: "Idaho",
+            abbreviation: "ID",
+          },
+          {
+            state_id: 14,
+            name: "Illinois",
+            abbreviation: "IL",
+          },
+          {
+            state_id: 15,
+            name: "Indiana",
+            abbreviation: "IN",
+          },
+          {
+            state_id: 16,
+            name: "Iowa",
+            abbreviation: "IA",
+          },
+          {
+            state_id: 17,
+            name: "Kansas",
+            abbreviation: "KS",
+          },
+          {
+            state_id: 18,
+            name: "Kentucky",
+            abbreviation: "KY",
+          },
+          {
+            state_id: 19,
+            name: "Louisiana",
+            abbreviation: "LA",
+          },
+          {
+            state_id: 20,
+            name: "Maine",
+            abbreviation: "ME",
+          },
+          {
+            state_id: 56,
+            name: "Marshall Islands",
+            abbreviation: "MH",
+          },
+          {
+            state_id: 21,
+            name: "Maryland",
+            abbreviation: "MD",
+          },
+          {
+            state_id: 22,
+            name: "Massachusetts",
+            abbreviation: "MA",
+          },
+          {
+            state_id: 23,
+            name: "Michigan",
+            abbreviation: "MI",
+          },
+          {
+            state_id: 24,
+            name: "Minnesota",
+            abbreviation: "MN",
+          },
+          {
+            state_id: 25,
+            name: "Mississippi",
+            abbreviation: "MS",
+          },
+          {
+            state_id: 26,
+            name: "Missouri",
+            abbreviation: "MO",
+          },
+          {
+            state_id: 27,
+            name: "Montana",
+            abbreviation: "MT",
+          },
+          {
+            state_id: 28,
+            name: "Nebraska",
+            abbreviation: "NE",
+          },
+          {
+            state_id: 29,
+            name: "Nevada",
+            abbreviation: "NV",
+          },
+          {
+            state_id: 30,
+            name: "New Hampshire",
+            abbreviation: "NH",
+          },
+          {
+            state_id: 31,
+            name: "New Jersey",
+            abbreviation: "NJ",
+          },
+          {
+            state_id: 32,
+            name: "New Mexico",
+            abbreviation: "NM",
+          },
+          {
+            state_id: 33,
+            name: "New York",
+            abbreviation: "NY",
+          },
+          {
+            state_id: 34,
+            name: "North Carolina",
+            abbreviation: "NC",
+          },
+          {
+            state_id: 35,
+            name: "North Dakota",
+            abbreviation: "ND",
+          },
+          {
+            state_id: 57,
+            name: "Northern Mariana Islands",
+            abbreviation: "MP",
+          },
+          {
+            state_id: 36,
+            name: "Ohio",
+            abbreviation: "OH",
+          },
+          {
+            state_id: 37,
+            name: "Oklahoma",
+            abbreviation: "OK",
+          },
+          {
+            state_id: 38,
+            name: "Oregon",
+            abbreviation: "OR",
+          },
+          {
+            state_id: 58,
+            name: "Palau",
+            abbreviation: "PW",
+          },
+          {
+            state_id: 39,
+            name: "Pennsylvania",
+            abbreviation: "PA",
+          },
+          {
+            state_id: 52,
+            name: "Puerto Rico",
+            abbreviation: "PR",
+          },
+          {
+            state_id: 40,
+            name: "Rhode Island",
+            abbreviation: "RI",
+          },
+          {
+            state_id: 41,
+            name: "South Carolina",
+            abbreviation: "SC",
+          },
+          {
+            state_id: 42,
+            name: "South Dakota",
+            abbreviation: "SD",
+          },
+          {
+            state_id: 43,
+            name: "Tennessee",
+            abbreviation: "TN",
+          },
+          {
+            state_id: 44,
+            name: "Texas",
+            abbreviation: "TX",
+          },
+          {
+            state_id: 45,
+            name: "Utah",
+            abbreviation: "UT",
+          },
+          {
+            state_id: 46,
+            name: "Vermont",
+            abbreviation: "VT",
+          },
+          {
+            state_id: 59,
+            name: "Virgin Islands",
+            abbreviation: "VI",
+          },
+          {
+            state_id: 47,
+            name: "Virginia",
+            abbreviation: "VA",
+          },
+          {
+            state_id: 48,
+            name: "Washington",
+            abbreviation: "WA",
+          },
+          {
+            state_id: 49,
+            name: "West Virginia",
+            abbreviation: "WV",
+          },
+          {
+            state_id: 50,
+            name: "Wisconsin",
+            abbreviation: "WI",
+          },
+          {
+            state_id: 51,
+            name: "Wyoming",
+            abbreviation: "WY",
+          },
+        ],
+        success: true,
+      };
+      const timezones = [
+        {
+          timezone_id: 1,
+          name: "America/Puerto_Rico",
+          offset: -4,
+        },
+        {
+          timezone_id: 2,
+          name: "US/Eastern",
+          offset: -5,
+        },
+        {
+          timezone_id: 3,
+          name: "US/Central",
+          offset: -6,
+        },
+        {
+          timezone_id: 4,
+          name: "US/Mountain",
+          offset: -7,
+        },
+        {
+          timezone_id: 5,
+          name: "US/Pacific",
+          offset: -8,
+        },
+        {
+          timezone_id: 6,
+          name: "US/Alaska",
+          offset: -9,
+        },
+        {
+          timezone_id: 7,
+          name: "US/Hawaii",
+          offset: -10,
+        },
+        {
+          timezone_id: 8,
+          name: "US/Samoa",
+          offset: -11,
+        },
+        {
+          timezone_id: 9,
+          name: "Pacific/Guam",
+          offset: 10,
+        },
+        {
+          timezone_id: 10,
+          name: "America/Adak",
+          offset: -10,
+        },
+        {
+          timezone_id: 11,
+          name: "America/Anchorage",
+          offset: -9,
+        },
+        {
+          timezone_id: 12,
+          name: "America/Boise",
+          offset: -7,
+        },
+        {
+          timezone_id: 13,
+          name: "America/Chicago",
+          offset: -6,
+        },
+        {
+          timezone_id: 14,
+          name: "America/Denver",
+          offset: -7,
+        },
+        {
+          timezone_id: 15,
+          name: "America/Detroit",
+          offset: -5,
+        },
+        {
+          timezone_id: 16,
+          name: "America/Indiana/Indianapolis",
+          offset: -5,
+        },
+        {
+          timezone_id: 17,
+          name: "America/Indiana/Knox",
+          offset: -6,
+        },
+        {
+          timezone_id: 18,
+          name: "America/Indiana/Marengo",
+          offset: -5,
+        },
+        {
+          timezone_id: 19,
+          name: "America/Indiana/Petersburg",
+          offset: -5,
+        },
+        {
+          timezone_id: 20,
+          name: "America/Indiana/Tell_City",
+          offset: -6,
+        },
+        {
+          timezone_id: 21,
+          name: "America/Indiana/Vevay",
+          offset: -5,
+        },
+        {
+          timezone_id: 22,
+          name: "America/Indiana/Vincennes",
+          offset: -5,
+        },
+        {
+          timezone_id: 23,
+          name: "America/Indiana/Winamac",
+          offset: -5,
+        },
+        {
+          timezone_id: 24,
+          name: "America/Juneau",
+          offset: -9,
+        },
+        {
+          timezone_id: 25,
+          name: "America/Kentucky/Louisville",
+          offset: -5,
+        },
+        {
+          timezone_id: 26,
+          name: "America/Kentucky/Monticello",
+          offset: -5,
+        },
+        {
+          timezone_id: 27,
+          name: "America/Los_Angeles",
+          offset: -8,
+        },
+        {
+          timezone_id: 28,
+          name: "America/Metlakatla",
+          offset: -9,
+        },
+        {
+          timezone_id: 29,
+          name: "America/New_York",
+          offset: -5,
+        },
+        {
+          timezone_id: 30,
+          name: "America/Nome",
+          offset: -9,
+        },
+        {
+          timezone_id: 31,
+          name: "America/Phoenix",
+          offset: -7,
+        },
+        {
+          timezone_id: 32,
+          name: "America/Sitka",
+          offset: -9,
+        },
+        {
+          timezone_id: 33,
+          name: "America/Yakutat",
+          offset: -9,
+        },
+        {
+          timezone_id: 34,
+          name: "Pacific/Honolulu",
+          offset: -10,
+        },
+        {
+          timezone_id: 35,
+          name: "Pacific/Port_Moresby",
+          offset: 10,
+        },
+        {
+          timezone_id: 36,
+          name: "America/Chihuahua",
+          offset: -6,
+        },
+        {
+          timezone_id: 37,
+          name: "America/Dawson",
+          offset: -7,
+        },
+        {
+          timezone_id: 38,
+          name: "America/Enseneda",
+          offset: -8,
+        },
+        {
+          timezone_id: 39,
+          name: "America/Hermosillo",
+          offset: -7,
+        },
+        {
+          timezone_id: 40,
+          name: "America/Mazatlan",
+          offset: -7,
+        },
+        {
+          timezone_id: 41,
+          name: "America/Tijuana",
+          offset: -8,
+        },
+        {
+          timezone_id: 42,
+          name: "America/Vancouver",
+          offset: -8,
+        },
+        {
+          timezone_id: 43,
+          name: "America/Whitehorse",
+          offset: -7,
+        },
+        {
+          timezone_id: 44,
+          name: "Canada/Pacific",
+          offset: -8,
+        },
+        {
+          timezone_id: 45,
+          name: "Canada/Yukon",
+          offset: -7,
+        },
+        {
+          timezone_id: 46,
+          name: "Mexico/BajaNorte",
+          offset: -8,
+        },
+        {
+          timezone_id: 47,
+          name: "Mexico/BajaSur",
+          offset: -7,
+        },
+        {
+          timezone_id: 48,
+          name: "PST8PDT",
+          offset: -8,
+        },
+        {
+          timezone_id: 49,
+          name: "Mexico/Bahia_Banderas",
+          offset: -6,
+        },
+        {
+          timezone_id: 50,
+          name: "America/Belize",
+          offset: -6,
+        },
+        {
+          timezone_id: 51,
+          name: "America/Costa_Rica",
+          offset: -6,
+        },
+        {
+          timezone_id: 52,
+          name: "America/El_Salvador",
+          offset: -6,
+        },
+        {
+          timezone_id: 53,
+          name: "America/Guatemala",
+          offset: -6,
+        },
+        {
+          timezone_id: 54,
+          name: "America/Knox_IN",
+          offset: -6,
+        },
+        {
+          timezone_id: 55,
+          name: "America/Managua",
+          offset: -6,
+        },
+        {
+          timezone_id: 56,
+          name: "America/Matamoros",
+          offset: -6,
+        },
+        {
+          timezone_id: 57,
+          name: "America/Menominee",
+          offset: -6,
+        },
+        {
+          timezone_id: 58,
+          name: "America/Merida",
+          offset: -6,
+        },
+        {
+          timezone_id: 59,
+          name: "America/Mexico_City",
+          offset: -6,
+        },
+        {
+          timezone_id: 60,
+          name: "America/Monterrey",
+          offset: -6,
+        },
+        {
+          timezone_id: 61,
+          name: "America/North_Dakota/Beulah",
+          offset: -6,
+        },
+        {
+          timezone_id: 62,
+          name: "America/North_Dakota/Center",
+          offset: -6,
+        },
+        {
+          timezone_id: 63,
+          name: "America/North_Dakota/New_Salem",
+          offset: -6,
+        },
+        {
+          timezone_id: 64,
+          name: "America/Rainy_River",
+          offset: -6,
+        },
+        {
+          timezone_id: 65,
+          name: "America/Rankin_Inlet",
+          offset: -6,
+        },
+        {
+          timezone_id: 66,
+          name: "America/Regina",
+          offset: -6,
+        },
+        {
+          timezone_id: 67,
+          name: "America/Resolute",
+          offset: -6,
+        },
+        {
+          timezone_id: 68,
+          name: "America/Swift_Current",
+          offset: -6,
+        },
+        {
+          timezone_id: 69,
+          name: "America/Tegucigalpa ",
+          offset: -6,
+        },
+        {
+          timezone_id: 70,
+          name: "America/Winnipeg",
+          offset: -6,
+        },
+        {
+          timezone_id: 71,
+          name: "CST6CDT",
+          offset: -6,
+        },
+        {
+          timezone_id: 72,
+          name: "Canada/Central",
+          offset: -6,
+        },
+        {
+          timezone_id: 73,
+          name: "Canada/Saskatchewan",
+          offset: -6,
+        },
+        {
+          timezone_id: 74,
+          name: "Mexico/General",
+          offset: -6,
+        },
+        {
+          timezone_id: 75,
+          name: "America/Cambridge_Bay",
+          offset: -7,
+        },
+        {
+          timezone_id: 76,
+          name: "America/Creston",
+          offset: -7,
+        },
+        {
+          timezone_id: 77,
+          name: "America/Dawson_Creek",
+          offset: -7,
+        },
+        {
+          timezone_id: 78,
+          name: "US/Indiana-Starke",
+          offset: -6,
+        },
+        {
+          timezone_id: 79,
+          name: "America/Edmonton",
+          offset: -7,
+        },
+        {
+          timezone_id: 80,
+          name: "America/Fort_Nelson",
+          offset: -7,
+        },
+        {
+          timezone_id: 81,
+          name: "America/Inuvik",
+          offset: -7,
+        },
+        {
+          timezone_id: 82,
+          name: "America/Ojinaga",
+          offset: -6,
+        },
+        {
+          timezone_id: 83,
+          name: "America/Shiprock",
+          offset: -7,
+        },
+        {
+          timezone_id: 84,
+          name: "America/Yellowknife",
+          offset: -7,
+        },
+        {
+          timezone_id: 85,
+          name: "Canada/Mountain",
+          offset: -7,
+        },
+        {
+          timezone_id: 86,
+          name: "MST7MDT",
+          offset: -7,
+        },
+        {
+          timezone_id: 87,
+          name: "Navajo",
+          offset: -7,
+        },
+        {
+          timezone_id: 88,
+          name: "US/Arizona",
+          offset: -7,
+        },
+        {
+          timezone_id: 89,
+          name: "Etc/GMT",
+          offset: 0,
+        },
+        {
+          timezone_id: 90,
+          name: "Etc/GMT+0",
+          offset: 0,
+        },
+        {
+          timezone_id: 91,
+          name: "Etc/GMT+1",
+          offset: -1,
+        },
+        {
+          timezone_id: 92,
+          name: "Etc/GMT+10",
+          offset: -10,
+        },
+        {
+          timezone_id: 93,
+          name: "Etc/GMT+11",
+          offset: -11,
+        },
+        {
+          timezone_id: 94,
+          name: "Etc/GMT+12",
+          offset: -12,
+        },
+        {
+          timezone_id: 95,
+          name: "Etc/GMT+2",
+          offset: -2,
+        },
+        {
+          timezone_id: 96,
+          name: "Etc/GMT+3",
+          offset: -3,
+        },
+        {
+          timezone_id: 97,
+          name: "Etc/GMT+4",
+          offset: -4,
+        },
+        {
+          timezone_id: 98,
+          name: "Etc/GMT+5",
+          offset: -5,
+        },
+        {
+          timezone_id: 99,
+          name: "Etc/GMT+6",
+          offset: -6,
+        },
+        {
+          timezone_id: 100,
+          name: "Etc/GMT+7",
+          offset: -7,
+        },
+        {
+          timezone_id: 101,
+          name: "Etc/GMT+8",
+          offset: -8,
+        },
+        {
+          timezone_id: 102,
+          name: "Etc/GMT+9",
+          offset: -9,
+        },
+        {
+          timezone_id: 103,
+          name: "Etc/GMT-0",
+          offset: 0,
+        },
+        {
+          timezone_id: 104,
+          name: "Etc/GMT-1",
+          offset: 1,
+        },
+        {
+          timezone_id: 105,
+          name: "Etc/GMT-10",
+          offset: 10,
+        },
+        {
+          timezone_id: 106,
+          name: "Etc/GMT-11",
+          offset: 11,
+        },
+        {
+          timezone_id: 107,
+          name: "Etc/GMT-12",
+          offset: 12,
+        },
+        {
+          timezone_id: 108,
+          name: "Etc/GMT-13",
+          offset: 13,
+        },
+        {
+          timezone_id: 109,
+          name: "Etc/GMT-14",
+          offset: 14,
+        },
+        {
+          timezone_id: 110,
+          name: "Etc/GMT-2",
+          offset: 2,
+        },
+        {
+          timezone_id: 111,
+          name: "Etc/GMT-3",
+          offset: 3,
+        },
+        {
+          timezone_id: 112,
+          name: "Etc/GMT-4",
+          offset: 4,
+        },
+        {
+          timezone_id: 113,
+          name: "Etc/GMT-5",
+          offset: 5,
+        },
+        {
+          timezone_id: 114,
+          name: "Etc/GMT-6",
+          offset: 6,
+        },
+        {
+          timezone_id: 115,
+          name: "Etc/GMT-7 ",
+          offset: 7,
+        },
+        {
+          timezone_id: 116,
+          name: "Etc/GMT-8",
+          offset: 8,
+        },
+        {
+          timezone_id: 117,
+          name: "Etc/GMT-9",
+          offset: 9,
+        },
+        {
+          timezone_id: 118,
+          name: "Etc/GMT0",
+          offset: 0,
+        },
+        {
+          timezone_id: 119,
+          name: "America/Atikokan",
+          offset: -5,
+        },
+        {
+          timezone_id: 120,
+          name: "America/Cancun",
+          offset: -5,
+        },
+        {
+          timezone_id: 121,
+          name: "America/Cayman",
+          offset: -5,
+        },
+        {
+          timezone_id: 122,
+          name: "America/Coral_Harbour",
+          offset: -5,
+        },
+        {
+          timezone_id: 123,
+          name: "America/Fort_Wayne",
+          offset: -5,
+        },
+        {
+          timezone_id: 124,
+          name: "America/Grand_Turk",
+          offset: -5,
+        },
+        {
+          timezone_id: 125,
+          name: "America/Indianapolis",
+          offset: -5,
+        },
+        {
+          timezone_id: 126,
+          name: "America/Iqaluit",
+          offset: -5,
+        },
+        {
+          timezone_id: 127,
+          name: "America/Jamaica",
+          offset: -5,
+        },
+        {
+          timezone_id: 128,
+          name: "America/Louisville",
+          offset: -5,
+        },
+        {
+          timezone_id: 129,
+          name: "America/Montreal",
+          offset: -5,
+        },
+        {
+          timezone_id: 130,
+          name: "America/Nassau",
+          offset: -5,
+        },
+        {
+          timezone_id: 131,
+          name: "America/Nipigon",
+          offset: -5,
+        },
+        {
+          timezone_id: 132,
+          name: "America/Panama",
+          offset: -5,
+        },
+        {
+          timezone_id: 133,
+          name: "America/Pangnirtung",
+          offset: -5,
+        },
+        {
+          timezone_id: 134,
+          name: "America/Port-au-Prince",
+          offset: -5,
+        },
+        {
+          timezone_id: 135,
+          name: "America/Thunder_Bay",
+          offset: -5,
+        },
+        {
+          timezone_id: 136,
+          name: "America/Toronto",
+          offset: -5,
+        },
+        {
+          timezone_id: 137,
+          name: "Canada/Eastern",
+          offset: -5,
+        },
+        {
+          timezone_id: 138,
+          name: "EST5EDT",
+          offset: -5,
+        },
+        {
+          timezone_id: 139,
+          name: "Jamaica",
+          offset: -5,
+        },
+        {
+          timezone_id: 140,
+          name: "US/East-Indiana",
+          offset: -5,
+        },
+        {
+          timezone_id: 141,
+          name: "US/Michigan",
+          offset: -5,
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const stateSelect = document.getElementById("state");
+        if (stateSelect) {
+          statesData.states.forEach((state) => {
+            const option = document.createElement("option");
+            option.value = state.state_id;
+            option.textContent = `${state.name} (${state.abbreviation})`;
+            stateSelect.appendChild(option);
+          });
+        } else {
+          console.error("State dropdown not found");
+        }
+
+        function findUserTimeZone(timeZone) {
+          return timezones.find((zone) => zone.name === timeZone);
+        }
+
+        const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const matchedZone = findUserTimeZone(userTimeZone);
+
+        const memberForm = document.getElementById("memberForm");
+        const submitButton = document.getElementById("submitButton");
+        const requiredFields = Array.from(
+          memberForm.querySelectorAll("input[required], select[required]")
+        );
+        const termsCheckbox = document.getElementById("flexCheckDefault");
+
+        // Function to check form validity
+        function checkFormValidity() {
+          const allFieldsFilled = requiredFields.every(
+            (field) => field.value.trim() !== ""
+          );
+          const termsChecked = termsCheckbox.checked;
+          submitButton.disabled = !(allFieldsFilled && termsChecked);
+        }
+
+        // Add event listeners to all required fields and the terms checkbox
+        requiredFields.forEach((field) => {
+          field.addEventListener("input", checkFormValidity);
+        });
+        termsCheckbox.addEventListener("change", checkFormValidity);
+
+        // Initial check on page load
+        checkFormValidity();
+
+        if (memberForm) {
+          memberForm.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            try {
+              const loginResponse = await fetch(
+                "https://portal.mytelemedicine.com/go/api/login",
+                {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                  },
+                  body: new URLSearchParams({
+                    email: "MTMPATOR01@mytelemedicine.com",
+                    password: "4SUERb=|t3Cjqkx8*(Nc",
+                  }),
+                }
+              );
+
+              if (!loginResponse.ok) {
+                const errorText = await loginResponse.text();
+                console.error("Login failed with response:", errorText);
+                throw new Error("Login failed");
+              }
+
+              const authorizationHeader =
+                loginResponse.headers.get("Authorization");
+              if (!authorizationHeader) {
+                console.error(
+                  "Authorization header not found in login response"
+                );
+                throw new Error("Authorization header missing");
+              }
+
+              console.log(
+                "Authorization header received:",
+                authorizationHeader
+              );
+
+              const externalMemberId = generateRandomString(9);
+              const formData = new FormData();
+              formData.append("primaryExternalId", externalMemberId);
+              formData.append("groupCode", "MTMPATOR01");
+              formData.append("planId", "4530");
+              formData.append("planDetailsId", "1");
+              formData.append(
+                "firstName",
+                memberForm.querySelector("#firstname")?.value || ""
+              );
+              formData.append(
+                "lastName",
+                memberForm.querySelector("#lastname")?.value || ""
+              );
+              formData.append(
+                "dob",
+                memberForm.querySelector("#dob")?.value || ""
+              );
+              formData.append(
+                "email",
+                memberForm.querySelector("#email")?.value || ""
+              );
+              formData.append(
+                "primaryPhone",
+                memberForm.querySelector("#phone")?.value || ""
+              );
+              formData.append("gender", "u");
+              formData.append("heightFeet", "5");
+              formData.append("heightInches", "11");
+              formData.append("weight", "170");
+              formData.append(
+                "address",
+                memberForm.querySelector("#company-address")?.value || ""
+              );
+              formData.append("address2", "");
+              formData.append(
+                "city",
+                memberForm.querySelector("#city")?.value || ""
+              );
+              formData.append(
+                "stateId",
+                memberForm.querySelector("#state")?.value || ""
+              );
+              formData.append(
+                "timezoneId",
+                matchedZone ? matchedZone.timezone_id : ""
+              );
+              formData.append(
+                "zipCode",
+                memberForm.querySelector("#zip-code")?.value || ""
+              );
+              formData.append("disableNotifications", "0");
+              formData.append("numAllowedDependents", "7");
+              formData.append("sendRegistrationNotification", "1");
+              formData.append("language", "en");
+
+              const createMemberResponse = await fetch(
+                "https://portal.mytelemedicine.com/go/api/census/createMember",
+                {
+                  method: "POST",
+                  headers: {
+                    Authorization: authorizationHeader,
+                  },
+                  body: formData,
+                }
+              );
+
+              if (!createMemberResponse.ok) {
+                const errorText = await createMemberResponse.text();
+                console.error(
+                  "Create Member request failed with response:",
+                  errorText
+                );
+                throw new Error("Create Member request failed");
+              }
+
+              const memberData = await createMemberResponse.json();
+              console.log("Create Member response:", memberData);
+
+              // Collect form data for rizlix_add_affiliate_on_website request
+              const affiliateData = {
+                referral_code:
+                  memberForm.querySelector("#referral-code")?.value || "",
+                name: `${memberForm.querySelector("#firstname")?.value || ""} ${
+                  memberForm.querySelector("#lastname")?.value || ""
+                }`,
+                email: memberForm.querySelector("#email")?.value || "",
+                phone_number: memberForm.querySelector("#phone")?.value || "",
+                external_member_id: externalMemberId,
+                groupCode: "MTMPTTGL01",
+                address:
+                  memberForm.querySelector("#company-address")?.value || "",
+                stateId: memberForm.querySelector("#state")?.value || "",
+                zipCode: memberForm.querySelector("#zip-code")?.value || "",
+                city: memberForm.querySelector("#company-address")?.value || "",
+              };
+
+              const affiliateResponse = await fetch(
+                "https://digimont-b0236e96b22c.herokuapp.com/django/rizlix_add_affiliate_on_website",
+                {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(affiliateData),
+                }
+              );
+
+              if (!affiliateResponse.ok) {
+                const errorText = await affiliateResponse.text();
+                console.error(
+                  "Affiliate request failed with response:",
+                  errorText
+                );
+                throw new Error("Affiliate request failed");
+              }
+
+              console.log(
+                "Affiliate response:",
+                await affiliateResponse.json()
+              );
+
+              alert(
+                "Pet owner successfully added. The member referral code will be sent via email."
+              );
+              memberForm.reset();
+
+              // Remove validation or custom classes
+              memberForm.classList.remove("was-validated");
+            } catch (error) {
+              console.error("Error:", error);
+              alert("An error occurred, please try again.");
+            }
+          });
+        } else {
+          console.error("Form element with id 'memberForm' not found.");
+        }
+      });
+
+      function generateRandomString(length = 20) {
+        const characters = "0123456789";
+        let result = "";
+        for (let i = 0; i < length; i++) {
+          result += characters.charAt(
+            Math.floor(Math.random() * characters.length)
+          );
+        }
+        return result;
+      }
+    </script>
+
+    <div class="nav mobile-nav">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" title="PawsToTails">
+            <img src="assets/images/Logo.png" alt="" />
+          </a>
+          <a
+            href="member-login.html"
+            class="mobile-account-icon"
+            aria-label="Login to Your Account"
+          >
+            <img
+              src="assets/images/icons/user-account-icon.svg"
+              alt="Login to Your Account"
+            />
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarmobile"
+            aria-controls="navbarmobile"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarmobile"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="how-it-works.html">How it Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="member-login.html">Member Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html">Breeder Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Enroll Members</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <header>
+      <div class="nav-desktop main-nav">
+        <nav class="navbar navbar-expand-lg desktop-nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/Logo.png" alt="" />
+            </a>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-paw"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-paw" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-paw" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-paw" href="how-it-works.html"
+                    >How it Works</a
+                  >
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-end">
+                <li class="nav-item">
+                  <a class="nav-link nav-paw" href="member-login.html"
+                    >Member Login
+                  </a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="btn btn-primary first-btn" href="signup.html"
+                    >Breeder Sign Up</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="btn btn-secondary second-btn"
+                    href="reseller-package-selection.html"
+                    >Enroll Members</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section id="plan">
+      <div class="container">
+        <form id="memberForm">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="pan owner-details">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Pet Owner Details</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="firstname" class="form-label"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstname"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="lastname" class="form-label">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastname"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="phone"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-4">
+                            <div class="mb-3">
+                                <label for="company-name" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="company-name">
+                            </div>
+                        </div> -->
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="mb-3">
+                      <label for="company-address" class="form-label"
+                        >Pet Owner Address</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="company-address"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="mb-3">
+                      <label for="city" class="form-label">City</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="city"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="state" class="form-label">State</label>
+                      <select class="form-control" id="state"></select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label for="zip-code" class="form-label">Zip Code</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="zip-code"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="mb-3">
+                      <label for="referral-code" class="form-label"
+                        >Breeder Code</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="referral-code"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="order-summary">
+                <div class="pan order-summary-details">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2>Order Summary</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <p class="mb-0">Subtotal</p>
+                    </div>
+                    <div class="col-lg-4 text-end">
+                      <p class="mb-0">$120.00</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <hr />
+                    </div>
+                  </div>
+                  <!-- <div class="row">
+                            <div class="col-lg-6">
+                                <p class="mb-0">
+                                    Reccuring total
+                                </p>
+                            </div>
+                            <div class="col-lg-6 text-end">
+                                <p class="mb-0">$39.90 USD <strong>monthly</strong></p>
+                            </div>
+                        </div> -->
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <p class="mb-0">
+                        Billed at $120.00 per year (reg. price $240.00)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 text-center">
+                    <div class="form-check text-center">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        I agree to PawsToTail's
+                        <a href="terms-conditions.html" target="_blank"
+                          >Terms & Conditions</a
+                        >
+                        and
+                        <a href="privacy-policy.html" target="_blank"
+                          >Privacy Policy</a
+                        >.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 text-center py-4">
+                    <div class="d-grid gap-2">
+                      <!-- <button type="submit" class="btn btn-primary btn-lg">Place Order</button> -->
+                      <button
+                        type="submit"
+                        id="submitButton"
+                        class="btn btn-primary btn-lg"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer-desktop">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <a href="index.html" title="PawsToTails"
+              ><img
+                src="assets/images/footer Image 2.png"
+                loading="lazy"
+                class="footer-logo"
+                alt="PawsToTails"
+            /></a>
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="footer-col">
+                  <h3 class="footer-col-heading">Solutions</h3>
+                  <ul class="footer-col-links">
+                    <li>
+                      <a href="signup.html" class="footer-col-links-item"
+                        >Breeder Sign Up</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="reseller-package-selection.html"
+                        class="footer-col-links-item"
+                        >Enroll Members</a
+                      >
+                    </li>
+                    <li>
+                      <a href="member-login.html" class="footer-col-links-item"
+                        >Member Login</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-col">
+                  <h3 class="footer-col-heading">Contact</h3>
+                  <ul class="footer-col-links">
+                    <li>
+                      <a href="tel:8777416880" class="footer-col-links-item"
+                        >(240) 418 3315</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:support@pawstotail.pet"
+                        class="footer-col-links-item"
+                        >support@pawstotail.pet</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-col">
+                  <h3 class="footer-col-heading">Other</h3>
+                  <ul class="footer-col-links">
+                    <li>
+                      <a href="about.html" class="footer-col-links-item"
+                        >About</a
+                      >
+                    </li>
+                    <li>
+                      <a href="faq.html" class="footer-col-links-item">FAQs</a>
+                    </li>
+                    <li>
+                      <a
+                        href="privacy-policy.html"
+                        class="footer-col-links-item"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="terms-conditions.html"
+                        class="footer-col-links-item"
+                        >Terms & Conditions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="social-links">
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/icons/insta-icon.svg"
+                  loading="lazy"
+                  alt="Follow PawsToTail on Instagram"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/icons/facebook-icon.svg"
+                  loading="lazy"
+                  alt="Follow PawsToTail on Facebook"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/icons/linkedin-icon.svg"
+                  loading="lazy"
+                  alt="Follow PawsToTail on Linkedin "
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/icons/link-tree-icon.svg"
+                  loading="lazy"
+                  alt="Follow PawsToTail on Link Tree"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-bottom">
+              <p>Copyright &copy; 2024 PawsToTail, Inc. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a href="index.html" title="PawsToTails"
+              ><img
+                src="assets/images/footer Image 2.png"
+                loading="lazy"
+                class="footer-logo"
+                alt="PawsToTails"
+            /></a>
+          </div>
+          <div class="col-lg-12">
+            <div class="footer-col first">
+              <ul class="footer-col-links">
+                <li>
+                  <a href="about.html" class="footer-col-links-item">About</a>
+                </li>
+                <li>
+                  <a href="faq.html" class="footer-col-links-item">FAQs</a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html" class="footer-col-links-item"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="terms-conditions.html" class="footer-col-links-item"
+                    >Terms & Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="footer-col second">
+              <ul class="footer-col-links">
+                <li>
+                  <a href="signup.html" class="footer-col-links-item"
+                    >Breeder Sign Up</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="reseller-package-selection.html"
+                    class="footer-col-links-item"
+                    >Enroll Members</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="footer-col third">
+              <ul class="footer-col-links">
+                <li>
+                  <a href="signup.html" class="btn btn-secondary hide"
+                    >RESELLER SIGN UP!</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="footer-col fourth">
+              <ul class="footer-col-links">
+                <li>
+                  <a href="tel:8777416880" class="footer-col-links-item">
+                    <img
+                      src="assets/images/icons/mingcute_phone-line.svg"
+                      alt=""
+                    />
+                    (240) 418 3315
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:support@pawstotail.pet"
+                    class="footer-col-links-item"
+                  >
+                    <img
+                      src="assets/images/icons/ic_outline-email.svg"
+                      alt=""
+                    />
+                    support@pawstotail.pet
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="social-links">
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/icons/insta-icon.svg"
+                  loading="lazy"
+                  alt="Follow PawsToTail on Instagram"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/icons/facebook-icon.svg"
+                  loading="lazy"
+                  alt="Follow PawsToTail on Facebook"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/icons/linkedin-icon.svg"
+                  loading="lazy"
+                  alt="Follow PawsToTail on Linkedin "
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="assets/images/icons/link-tree-icon.svg"
+                  loading="lazy"
+                  alt="Follow PawsToTail on Link Tree"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-bottom">
+              <p>Copyright &copy; 2024 PawsToTail, Inc. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/script.js?ver=1"></script>
+  </body>
+</html>
