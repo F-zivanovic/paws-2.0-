@@ -1191,6 +1191,10 @@ HEADER SECTION - Home page
     font-size: 12px;
     flex-basis: 85px;
   }
+
+  .header__bottom {
+    row-gap: 0;
+  }
 }
 
 @media (max-width: 460px) {
@@ -1228,12 +1232,12 @@ HEADER SECTION - Home page
 
 @media (max-width: 576px) {
   .header__text__h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .header__text__p {
-    font-size: 14px;
-    max-width: 380px;
+    font-size: 16px;
+    max-width: 450px;
     margin: auto;
     margin-bottom: 10px;
   }
@@ -1436,7 +1440,7 @@ FEATURE SECTION STARTS - Home page
 }
 .keywords-item-text p {
   color: var(--white-color);
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.4;
   margin-bottom: 0;
 }
@@ -1467,11 +1471,11 @@ FEATURE SECTION STARTS - Home page
   }
 
   .keywords-item-text h3 {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .keywords-item-text p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
@@ -1921,7 +1925,7 @@ WHO WE ARE SECTION - Home page
   font-size: 18px;
   line-height: 2;
   display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Vertically center the content */
+  align-items: flex-start; /* Vertically center the content */
 }
 
 .who-we-are-desktop .paw-list li:not(:last-child) {
@@ -1968,7 +1972,7 @@ WHO WE ARE SECTION - Home page
   }
 }
 .who-we-are-desktop .paw-list span {
-  font-size: 15px;
+  font-size: 16px;
   margin-left: 5px; /* Increase or decrease as needed */
 }
 .who-we-are-desktop .btn-primary {
@@ -2263,11 +2267,11 @@ PROCESS SECTION - Home page
 }
 @media (max-width: 1180px) {
   .online-vet-text-item-text h3 {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 .online-vet-text-item-text p {
-  font-size: 16px;
+  font-size: 17px;
   color: var(--primary-bg);
 }
 .online-vet-text-item-text h2 {
@@ -2484,7 +2488,7 @@ SERVICES SECTION - Home page
   justify-content: center;
   text-align: center;
   color: var(--white-color);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 800;
   background-color: var(--primary-bg);
   position: absolute;
@@ -2500,14 +2504,13 @@ SERVICES SECTION - Home page
   .services-section .services-wrapper .circle {
     width: 90px;
     height: 90px;
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 @media (max-width: 450px) {
   .services-section .services-wrapper .circle {
     width: 70px;
     height: 70px;
-    font-size: 9px;
     font-weight: 600;
   }
 }
@@ -2515,7 +2518,6 @@ SERVICES SECTION - Home page
   .services-section .services-wrapper .circle {
     width: 50px;
     height: 50px;
-    font-size: 7px;
   }
 }
 .services-section .services-wrapper .circle[class*="left-"] {
@@ -2943,6 +2945,7 @@ SERVICES SECTION - Home page
 }
 .in-news-section .news-item-text p {
   margin: 0;
+  font-size: 18px;
 }
 .in-news-section .news-item-text p.meta {
   font-weight: 700;
@@ -4495,7 +4498,7 @@ CONTACT HERO - Contact page
   }
 
   .contact-item-inner .row-two p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .contact-item-inner .row-two h4 {
@@ -4503,7 +4506,7 @@ CONTACT HERO - Contact page
   }
 
   .contact-item-inner h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -5190,7 +5193,7 @@ CONTACT HERO - Contact page
 }
 @media (max-width: 568px) {
   .form-wrapper .form-label {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 .form-wrapper .form-input {
@@ -5223,7 +5226,7 @@ CONTACT HERO - Contact page
 }
 @media (max-width: 568px) {
   .form-wrapper .form-button {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -5702,6 +5705,7 @@ CONTACT HERO - Contact page
   background-color: var(--primary-bg);
   color: var(--white-color);
   padding-block: 30px;
+  width: 100%;
 }
 .inner-page-hero .hero-text-wrapper .hero-text p {
   margin-bottom: 0;
